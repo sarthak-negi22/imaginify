@@ -80,7 +80,6 @@ const MediaUploader = ({
                                 placeholder = { dataUrl as PlaceholderValue }
                                 className = "media-uploader_cldImage"
                             />
-
                         </div>
                     </>
                 ) : (
@@ -94,8 +93,8 @@ const MediaUploader = ({
                             />
                         </div>
                         <p className = "p-14-medium">
-                                Click here to upload image
-                            </p>
+                            Click here to upload image
+                        </p>
                     </div>
                 )}
             </div>
