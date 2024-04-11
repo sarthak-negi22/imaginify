@@ -12,7 +12,6 @@ type MediaUploaderProps = {
     publicId : string;
     image : any;
     type : string;
-
 }
 
 const MediaUploader = ({ 
@@ -30,7 +29,7 @@ const MediaUploader = ({
             publicId : result?.info?.public_id,
             width : result?.info?.width,
             height : result?.info?.height,
-            secureUrl : result?.info?.secure_url,
+            secureURL : result?.info?.secure_url,
         }));
 
         onValueChange(result?.info?.public_id);
@@ -49,7 +48,6 @@ const MediaUploader = ({
             description : 'Please try again',
             duration : 5000,
             className : 'error-toast'
-
         })
     }
   return (
