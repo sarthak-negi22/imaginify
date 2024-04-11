@@ -11,7 +11,7 @@ import { v2 as cloudinary } from 'cloudinary';
 const populateUser = (query : any) => query.populate({
     path : 'author',
     model : User,
-    select : '_id firstName lastName',
+    select : '_id firstName lastName clerkId',
 })
 
 // ADD IMAGE
@@ -45,7 +45,7 @@ export async function updateImage({ image, userId, path } : UpdateImageParams) {
 
         const imageToUpdate = await Image.findById(image._id);
 
-        if(!imageToUpdate || imageToUpdate.author.toHextString() !== userId ) {
+        if(!imageToUpdate || imageToUpdate.author.toHexString() !== userId ) {
             throw new Error('Unauthorized or image not found to update!');
         }
 
