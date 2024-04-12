@@ -4,6 +4,11 @@ import { transformationTypes } from "@/constants"
 import { getUserById } from "@/lib/actions/user.actions";
 import { auth } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
+import { Metadata } from "next";
+
+export const metadata : Metadata = {
+  title : 'Apply Transformation | Imaginify'
+}
 
 const AddTransformationTypePage = async ({ params : { type } } : SearchParamProps) => {
   const { userId } = auth();

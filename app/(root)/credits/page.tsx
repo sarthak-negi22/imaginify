@@ -7,6 +7,11 @@ import { Button } from "@/components/ui/button";
 import { plans } from "@/constants";
 import { getUserById } from "@/lib/actions/user.actions";
 import Checkout from "@/components/shared/Checkout";
+import { Metadata } from "next";
+
+export const metadata : Metadata = {
+  title : 'Buy Credits | Imaginify'
+}
 
 const Credits = async () => {
   const { userId } = auth();

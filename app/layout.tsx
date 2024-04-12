@@ -13,7 +13,11 @@ const IBMPlex = IBM_Plex_Sans({
 
 export const metadata: Metadata = {
   title: "Imaginify",
-  description: "AI-powered image generator",
+  description: "Explore an array of creative filters and enhancements to bring your visuals to life like never before",
+  metadataBase : new URL('https://imaginify-delta-three.vercel.app/'),
+  openGraph: {
+    images: '/opengraph-image.png',
+  },
 };
 
 export default function RootLayout({

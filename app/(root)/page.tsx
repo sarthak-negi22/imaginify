@@ -4,6 +4,11 @@ import { getAllImages } from "@/lib/actions/image.actions"
 import { UserButton } from "@clerk/nextjs"
 import Image from "next/image"
 import Link from "next/link"
+import { Metadata } from "next"
+
+export const metadata : Metadata =  {
+  title : 'Home | Imaginify'
+}
 
 const Home = async ({ searchParams } : SearchParamProps) => {
   const page = Number(searchParams?.page) || 1;

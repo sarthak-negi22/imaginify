@@ -6,6 +6,11 @@ import TransformationForm from "@/components/shared/TransformationForm";
 import { transformationTypes } from "@/constants";
 import { getUserById } from "@/lib/actions/user.actions";
 import { getImageById } from "@/lib/actions/image.actions";
+import { Metadata } from "next";
+
+export const metadata : Metadata = {
+  title : 'Update Transformation | Imaginify'
+}
 
 const Page = async ({ params: { id } }: SearchParamProps) => {
   const { userId } = auth();
