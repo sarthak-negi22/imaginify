@@ -10,7 +10,7 @@ import Checkout from "@/components/shared/Checkout";
 import { Metadata } from "next";
 
 export const metadata : Metadata = {
-  title : 'Buy Credits | Imaginify'
+  title : 'Credits | Imaginify'
 }
 
 const Credits = async () => {

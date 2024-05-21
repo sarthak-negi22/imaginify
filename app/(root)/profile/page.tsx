@@ -9,7 +9,7 @@ import { getUserById } from "@/lib/actions/user.actions";
 import { Metadata } from "next";
 
 export const metadata : Metadata = {
-  title : 'My Profile | Imaginify'
+  title : 'Profile | Imaginify'
 }
 
 const Profile = async ({ searchParams }: SearchParamProps) => {
